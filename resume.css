@@ -1,0 +1,345 @@
+#body-header
+{
+	height: 50vh;
+	width: 100vw;
+	background-image: url("img.jpg");
+	background-size: 100% 100%;
+	opacity: 80%;
+}
+
+.horizontal-list
+{
+	list-style: none;
+	text-align: center;
+
+
+	li
+	{
+		display: inline-block;
+		a
+		{
+		color: white;
+		text-align: center;
+		text-decoration: solid;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		transition: color 0.5s;
+		}
+		a:hover
+		{
+			text-decoration: underline;
+			border: 1px solid orange;
+		}
+	}
+}
+
+.horizontal-list-social
+{
+	list-style: none;
+	text-align: center;
+
+	li
+	{
+		display: inline-block;
+
+		a
+		{
+		color: white;
+		padding: 10px;
+		font-size: 1.5rem;
+		border-radius: 80%;
+		transition: color 0.5s;
+		}
+		a:hover
+		{
+			box-shadow: 0px 0px 4px 0.5px white;
+		}
+	}
+}
+section
+{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.section-heading
+{
+	width:auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+	span
+	{
+		font-size: 40px;
+		color:blue;
+		display: inline-block;
+		padding-top:10px;
+		margin-right: 0.5rem;
+		margin: center;
+	}
+
+}
+
+#name-social-cont
+{
+	margin-top: 17vh;
+}
+#name-tag
+{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	text-decoration: solid;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+
+}
+#about{
+	height: auto;
+	width:100%;
+	position: relative;
+}
+#my-image
+{
+	height: 12rem;
+	width: 12rem;
+	margin:auto;
+	margin-top: -5rem;
+	img
+	{
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		box-shadow: 0px 0px 6px 2px white;
+	}
+}
+#detail
+{
+	width: 80%;
+	margin:auto;
+	margin-top: 5%;
+}
+
+
+.mb75px
+{
+	margin:75px;
+}
+/*Skill Section*/
+
+
+.skills-display
+{
+	width: 70%;
+	display: flex;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+/*	align-content: space-between ;*/
+/*align-items: flex-start;*/
+	row-gap: 20px;
+	
+	
+/*	height:100px;*/
+/*	border:2px solid black;*/
+}
+.skill-prog
+{
+	height:1.4rem;
+	width: 7rem;	
+	display: flex;
+/*	justify-content: space-between;*/
+	background-color: lightgray;
+	border-radius: 0.8rem;
+	border:0.2px solid black;
+	box-shadow: 0px 0px 6px 2px darkgrey;
+	margin: 25px;
+	overflow: hidden;
+	>div{
+		border-radius: 20px 0px 0px 20px;	
+	}
+}
+.skill-name span{
+	color:white;
+	font-size: 1rem;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+/*Contact Section*/
+
+#contact
+{
+	width: 100%;
+	background-image: linear-gradient(45deg,blue,purple);
+}
+
+.contact-box
+{
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	margin-right:10px;
+
+}
+
+.Form input,textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.my-details-info-container,#detail_con
+{
+	color:white;
+	padding-left: 10%;
+}
+
+/*Timeline*/
+.timeline
+{
+	position: relative;
+	width: 75%;
+	border: 1px solid black;
+	}
+
+.timeline-box
+{
+	position: relative;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	border: 2px solid black;
+	margin: 5px;
+}
+.timeline-box:nth-child(2n)
+{
+	left: 53%;
+}
+.timeline-box::after
+{
+	content: '';
+	position: absolute;
+	top:30%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: grey;
+	z-index: 1;
+	opacity: 80%;
+}
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -12%;
+}
+
+.timeline-divider
+{
+	position: absolute;
+	height: 74.2%;
+	width: 0%;
+	border: 1px dashed skyblue;
+	top: 8.2%;
+	left: 50%;
+}
+
+.timeline-traveller
+{
+	position: sticky;
+	top:25%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+
+/*Percent class*/
+.eighty-five
+{
+	height: inherit;
+	width:85%;
+}
+
+
+.m0 {
+    margin: 0;
+}
+
+
+
+.mb-blue
+{
+	height: inherit;
+	background-color: blue;	
+}
+.mb-green
+{
+	height: inherit;
+	background-color: seagreen;	
+}
+.mb-orange
+{
+	height: inherit;
+	background-color: orange;	
+}
+.mb-white
+{
+	background-color: white;	
+}
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
