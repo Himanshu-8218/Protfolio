@@ -150,7 +150,11 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 2; 
 }
 
 @media (max-width: 640px) {
-  #my-image { height: 10rem; width: 10rem; margin: -6rem auto 1rem; }
+  #my-image { 
+    height: 9rem; 
+    width: 9rem; 
+    margin: -5rem auto 1rem; 
+  }
   .contact-box { flex-direction: column; gap: 1.5rem; }
 }
 
@@ -461,12 +465,14 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 4; 
   }
   
   #body-header {
-    height: 60vh;
+    height: 45vh;
     background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
   }
   
   .hero-center {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
   
   #name-tag {
@@ -483,6 +489,15 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 4; 
     width: 32px;
     font-size: 1.1rem;
   }
+  
+  /* Mobile section spacing */
+  main {
+    padding: 1rem 0.75rem;
+  }
+  
+  section {
+    padding: 2.5rem 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -491,11 +506,12 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 4; 
   }
   
   #body-header {
-    height: 50vh;
+    height: 40vh;
+    background-position: center top;
   }
   
   .hero-center {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   
   #name-tag {
@@ -510,6 +526,15 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 4; 
     height: 28px;
     width: 28px;
     font-size: 1rem;
+  }
+  
+  /* Extra small mobile section spacing */
+  main {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  section {
+    padding: 2rem 0;
   }
 }
 
@@ -526,6 +551,19 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 4; 
   .horizontal-list a {
     padding: 0.3rem 0.5rem;
     font-size: 0.9rem;
+  }
+  
+  /* Tablet section spacing */
+  main {
+    padding: 1.5rem 1.25rem;
+  }
+  
+  section {
+    padding: 3rem 0;
+  }
+  
+  #body-header {
+    height: 50vh;
   }
 }
 
@@ -546,15 +584,25 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 4; 
 /* Large Mobile Landscape */
 @media (max-width: 768px) and (orientation: landscape) {
   #body-header {
-    height: 70vh;
+    height: 60vh;
+    background-position: center top;
   }
   
   .hero-center {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   
   #name-tag {
     font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  
+  /* Landscape mobile section spacing */
+  main {
+    padding: 1rem 0.75rem;
+  }
+  
+  section {
+    padding: 2rem 0;
   }
 }
 
@@ -580,5 +628,25 @@ nav { position: absolute; top: 0; left: 0; right: 0; padding: 1rem; z-index: 4; 
     height: 26px;
     width: 26px;
     font-size: 0.9rem;
+  }
+  
+  #body-header {
+    height: 35vh;
+  }
+  
+  /* Extra small mobile section spacing */
+  main {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  section {
+    padding: 1.5rem 0;
+  }
+  
+  /* Profile image adjustments for small screens */
+  #my-image {
+    height: 8rem;
+    width: 8rem;
+    margin: -5rem auto 1rem;
   }
 }

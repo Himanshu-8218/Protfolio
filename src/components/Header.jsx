@@ -74,7 +74,7 @@ const Header = () => {
         >
           <div className="mobile-sidebar-content">
             <div className="mobile-sidebar-header">
-              <h3>Navigation</h3>
+              <h3>Portfolio</h3>
               <button 
                 className="close-btn"
                 onClick={closeMobileMenu}
