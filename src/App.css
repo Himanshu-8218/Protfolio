@@ -1,0 +1,3 @@
+/* App-level overrides kept minimal. See index.css for full theme. */
+#root { max-width: unset; margin: 0; padding: 0; text-align: inherit; }
+.logo, .card, .read-the-docs { display: none; }
