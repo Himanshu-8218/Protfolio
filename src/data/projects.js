@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 'proj-3',
     title: 'Surprise House Price Prediction Model',
-    description: 'Reusable UI components with accessible patterns and dark mode.',
+    description: 'Surprise House Price Prediction Model is a machine learning model that predicts the price of a house based on the features of the house. It uses a dataset of houses and their features to train the model and predict the price of a new house.',
     tech: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'Machine Learning', 'MultiVariate analysis', 'Data Visualization'],
     demoUrl: '#',
     sourceUrl: 'https://github.com/Himanshu-8218/Surprise-Housing',
